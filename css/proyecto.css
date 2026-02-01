@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Bootstrap */
+.btn-dark {
+    background-color: #404A30;
+    border: none;
+    letter-spacing: 0.1em;
+}
+
+.btn-dark:hover {
+    background-color: #2f3524;
+}
+body {
+    font-family: sans-serif;
+}
+main section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 96px 48px;
+}
+
+main h2 {
+    font-size: 28px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #425142;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+main p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #5E6360;
+    margin-bottom: 16px;
+    text-align: center;
+}
+main section p strong {
+    color: #425142;
+}
+main section img {
+    width: 100%;
+    max-width: 900px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin: 32px auto;
+}
+
+/* HERO */
+.hero {
+    position: relative;
+}
+
+/* NAV */
+.main-nav {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 0 48px;
+    z-index: 10;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu li:not(.logo) {
+    margin: 0 16px;
+}
+
+.nav-menu .logo {
+    margin: 0 auto;
+}
+
+.main-nav a {
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #404A30;
+    font-weight: 700;
+}
+
+.nav-menu .logo a {
+    font-size: 18px;
+    letter-spacing: 0.2em;
+}
+
+/* IMAGEN */
+.hero-image {
+    width: 100%;
+    height: 85vh;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* BARRA SUPERIOR */
+.top-bar {
+    height: 37px;
+    background-color: #E0D8CB7D;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+.top-bar span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    letter-spacing: 0.35rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+/* SECCIÓN JUGOS */
+.jugos {
+    padding: 96px 48px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 48px;
+
+}
+
+.jugos h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 64px;
+}
+.jugos h2 a {
+    font-size: 28px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #5E6360;
+}
+
+/* CARD */
+.jugo h3 {
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    margin-bottom: 12px;
+    color: #425142;
+}
+
+.jugo p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #5E6360;
+    margin-bottom: 6px;
+}
+/* section de manifiesto*/
+.manifiesto {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 96px 48px;
+}
+
+.manifiesto img {
+    width: 45%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.manifiesto p {
+    width: 55%;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #425142;
+}
+/*section nosotros*/
+.nosotros {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 80px;
+
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 120px 48px;
+}
+
+.nosotros > * {
+    grid-column: 2;
+}
+
+.nosotros {
+    grid-auto-flow: row dense;
+}
+
+.nosotros img {
+    width: 50%;
+    height: 340px;
+    object-fit: cover;
+}
+.nosotros img:nth-of-type(1) {
+    grid-row: 1;
+    grid-column: 2;
+}
+.nosotros a {
+    grid-row: 2;
+    grid-column: 2;
+    
+    margin-top: 16px;
+    font-size: 14px;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: #425142;
+    text-decoration: none;
+}
+.nosotros a:hover {
+    opacity: 0.6;
+}
+/*footer*/
+.footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 64px 48px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    align-items: start;
+    gap: 80px;
+
+    border-top: 1px solid #9DA5A1;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-column h4 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #425142;
+    margin-bottom: 8px;
+}
+.footer-column a {
+    font-size: 14px;
+    color: #5E6360;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.footer-column a:hover {
+    opacity: 0.6;
+}
+
+.footer-copy {
+    font-size: 14px;
+    color: #5E6360;
+    white-space: nowrap;
+    align-self: start;
+}
+
+/* ===== TIPS ===== */
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 48px;
+    margin-top: 64px;
+}
+
+.tip-card {
+    border-top: 1px solid #9DA5A1;
+    padding-top: 24px;
+    text-align: left;
+}
+
+.tip-card h3 {
+    font-size: 15px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #425142;
+    margin-bottom: 12px;
+}
+
+.tip-card p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #5E6360;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    /* NAV */
+    .main-nav {
+        position: static;
+        padding: 16px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .nav-menu .logo {
+        margin: 12px 0;
+    }
+
+    /* HERO */
+    .hero-image {
+        height: 60vh;
+    }
+
+    /* MANIFIESTO */
+    .manifiesto {
+        flex-direction: column;
+        gap: 32px;
+        padding: 64px 24px;
+    }
+
+    .manifiesto img {
+        width: 100%;
+        height: 260px;
+    }
+
+    .manifiesto p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    /* NOSOTROS */
+    .nosotros {
+        grid-template-columns: 1fr;
+        padding: 64px 24px;
+    }
+
+    .nosotros img {
+        width: 100%;
+        height: 260px;
+    }
+
+    .nosotros a {
+        grid-column: 1;
+        text-align: center;
+    }
+
+    /* FOOTER */
+    .footer {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        text-align: center;
+    }
+
+    .footer-copy {
+        white-space: normal;
+    }
+}
+
+
+
+
