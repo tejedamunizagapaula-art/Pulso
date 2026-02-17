@@ -1,0 +1,65 @@
+.top-bar {
+height: 37px;
+background: $gradient-soft;
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 20;
+
+span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    letter-spacing: 0.35rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+}
+
+.main-nav {
+position: absolute;
+top: 60px;
+width: 100%;
+padding: 0 $space-md;
+z-index: 10;
+
+@include respond(tablet) {
+    position: static;
+    padding: $space-sm;
+}
+}
+
+.nav-menu {
+list-style: none;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+@include respond(tablet) {
+    flex-direction: column;
+    gap: 12px;
+}
+
+li {
+    a {
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $accent;
+    font-weight: 700;
+    transition: $transition;
+
+    &:hover {
+    opacity: 0.6;
+    }
+    }
+}
+
+.logo a {
+font-size: 18px;
+letter-spacing: 0.2em;
+}
+}

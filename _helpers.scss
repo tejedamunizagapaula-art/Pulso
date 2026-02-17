@@ -1,0 +1,15 @@
+$spaces: (
+sm: 16px,
+md: 32px,
+lg: 64px
+);
+
+@each $name, $value in $spaces {
+.m-#{$name} {
+margin: $value;
+}
+
+.p-#{$name} {
+padding: $value;
+}
+}

@@ -1,0 +1,46 @@
+.footer {
+max-width: 1200px;
+margin: 0 auto;
+padding: $space-md;
+display: grid;
+grid-template-columns: 1fr 1fr auto;
+gap: 80px;
+border-top: 1px solid #9DA5A1;
+
+@include respond(tablet) {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 32px;
+}
+
+&-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+h4 {
+font-size: 14px;
+color: $primary;
+    }
+
+a {
+color: $secondary;
+text-decoration: underline;
+transition: $transition;
+
+&:hover {
+opacity: 0.6;
+}
+    }
+}
+
+&-copy {
+font-size: 14px;
+color: $secondary;
+white-space: nowrap;
+
+@include respond(tablet) {
+white-space: normal;
+    }
+}
+}
